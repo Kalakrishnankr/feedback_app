@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_centerHorizontal="true">
+
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/rlTop"
+          android:layout_centerHorizontal="true">
+
+
+         <ImageView
+             android:layout_width="300dp"
+             android:layout_height="180dp"
+             android:id="@+id/imageView"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:src="@drawable/mk"/>
+         <com.example.raghulsn.feedback_new.model.CustomTextview
+             android:id="@+id/textView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/imageView"
+             android:textColor="#ffffff"
+             android:textSize="40sp"
+             android:layout_marginTop="200dp"
+             android:text="@string/homepage_text"
+             android:gravity="center"/>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="450dp"
+          android:id="@+id/rlTop_rght"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true">
+
+
+         <at.markushi.ui.CircleButton
+             android:id="@+id/imgV1_set"
+             android:layout_width="130dp"
+             android:layout_height="110dp"
+             android:layout_marginRight="50dp"
+             android:layout_marginTop="60dp"
+             android:src="@drawable/settings"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             app:cb_color="#d7b7b9"
+             app:cb_pressedRingWidth="15dip"
+             android:visibility="gone"
+             />
+
+
+
+
+
+         <at.markushi.ui.CircleButton
+             android:id="@+id/right"
+             android:foregroundGravity="center_horizontal"
+             android:layout_below="@id/imgV1_set"
+             android:layout_width="130dp"
+             android:layout_height="80dp"
+             android:layout_marginTop="250dp"
+             android:layout_marginRight="50dp"
+             app:cb_color="#d7b7b9"
+             app:cb_pressedRingWidth="15dip"
+             android:src="@drawable/rightarrow01"/>
+
+
+      </RelativeLayout>
+
+
+
+      <com.example.raghulsn.feedback_new.AnimatedRatingBar
+
+          android:id="@+id/rlinner_img1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:layoutToUse="@layout/animated_ratinglayout"
+          android:layout_below="@+id/rlTop"
+          android:weightSum="5"
+          android:background="@drawable/top_inner">
+
+
+         <!--<LinearLayout-->
+             <!--android:layout_width="match_parent"-->
+             <!--android:layout_height="match_parent"-->
+             <!--android:layout_marginLeft="200dp"-->
+             <!--android:layout_marginRight="200dp">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/imgV1"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:src="@drawable/star2"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginBottom="40dp" />-->
+            <!--<ImageView-->
+                <!--android:id="@+id/imgV2"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/star1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginBottom="40dp" />-->
+            <!--<ImageView-->
+                <!--android:id="@+id/imgV3"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:src="@drawable/star1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginBottom="40dp" />-->
+            <!--<ImageView-->
+                <!--android:id="@+id/imgV4"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/star1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginBottom="40dp" />-->
+            <!--<ImageView-->
+                <!--android:id="@+id/imgV5"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/star1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginBottom="40dp" />-->
+
+         <!--</LinearLayout>-->
+
+      </com.example.raghulsn.feedback_new.AnimatedRatingBar>
+
+   </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

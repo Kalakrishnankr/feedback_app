@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="1500dp"
+        android:layout_height="100dp"
+        android:background="#610303">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt1"
+            android:text="MK"
+            android:textColor="#71ffffff"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_below="@+id/rl1"
+        android:layout_width="1500dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/lfarw"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/lftarw"
+            android:layout_marginTop="20dp"
+            app:cb_color="#d7b7b9"
+            app:cb_pressedRingWidth="15dip"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt2"
+            android:text="Add Questions"
+            android:layout_marginTop="40dp"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:typeface="sans"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:orientation="vertical"
+
+        android:layout_below="@id/rl2"
+        android:fillViewport="false">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_new"
+            android:layout_below="@+id/rl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_width="1500dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:background="#3aac0202"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="Question 1"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"/>
+
+                <!-- <RatingBar
+                     android:id="@+id/rb1"
+                     android:layout_width="700dp"
+                     android:layout_height="50dp"
+                     android:layout_marginTop="30dp"
+                     android:layout_marginLeft="440dp"
+                     android:numStars="5"
+                     android:stepSize="1"/>-->
+                <EditText
+                    android:id="@+id/edit_Txt1"
+                    android:layout_width="700dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="20dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="440dp"
+                    android:background="@drawable/rounded"/>
+
+                <!-- <EditText
+                     android:layout_width="700dp"
+                     android:layout_height="50dp"
+                     android:layout_marginTop="30dp"
+                     android:layout_marginLeft="440dp"
+                     android:background="#ffffff"/>-->
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:layout_below="@+id/rl3"
+                android:layout_width="1500dp"
+                android:layout_height="1dp"
+                android:background="#5dffffff"
+                >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl5"
+                android:layout_below="@+id/rl4"
+                android:layout_width="1500dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="1dp"
+                android:background="#3aac0202"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="Question 2"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"/>
+
+                <EditText
+                    android:id="@+id/edit_Txt2"
+                    android:layout_width="700dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="20dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="440dp"
+                    android:background="@drawable/rounded"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl6"
+                android:layout_below="@+id/rl5"
+                android:layout_width="1500dp"
+                android:layout_height="1dp"
+                android:background="#5dffffff"
+                >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl7"
+                android:layout_below="@+id/rl6"
+                android:layout_width="1500dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="1dp"
+                android:background="#3aac0202"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="Question 3"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"/>
+
+                <EditText
+                    android:id="@+id/edit_Txt3"
+                    android:layout_width="700dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="20dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="440dp"
+                    android:background="@drawable/rounded"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl8"
+                android:layout_below="@+id/rl7"
+                android:layout_width="1500dp"
+                android:layout_height="1dp"
+                android:background="#5dffffff"
+                >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl9"
+                android:layout_below="@+id/rl8"
+                android:layout_width="1500dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="1dp"
+                android:background="#3aac0202"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="Question 4"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"/>
+
+                <EditText
+                    android:id="@+id/edit_Txt4"
+                    android:layout_width="700dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="20dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="440dp"
+                    android:background="@drawable/rounded"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl10"
+                android:layout_below="@+id/rl9"
+                android:layout_width="1500dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="1dp"
+                android:background="#3aac0202"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="Question 5"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"/>
+
+                <EditText
+                    android:id="@+id/edit_Txt5"
+                    android:layout_width="700dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="20dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="440dp"
+                    android:background="@drawable/rounded"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl11"
+                android:layout_below="@+id/rl10"
+                android:layout_width="1500dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="1dp"
+                android:background="#3aac0202"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="Question 6"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"/>
+
+                <EditText
+                    android:id="@+id/edit_Txt6"
+                    android:layout_width="700dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="20dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="440dp"
+                    android:background="@drawable/rounded"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl12"
+                android:layout_below="@+id/rl11"
+                android:layout_width="1500dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="1dp"
+                android:background="#3aac0202"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="Question 7"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"/>
+
+                <EditText
+                    android:id="@+id/edit_Txt7"
+                    android:layout_width="700dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="20dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="440dp"
+                    android:background="@drawable/rounded"/>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

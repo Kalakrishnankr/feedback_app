@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Feedback</string>
+    <string name="homepage_text">How would you rate us today?</string>
+    <string name="gender_top">You are ?</string>
+    <string name="age">Age</string>
+    <string name="age_btn1">Under 18</string>
+    <string name="age_btn2">19-28</string>
+    <string name="age_btn3">29-40</string>
+    <string name="age_btn4">Above 40</string>
+    <string name="rating_top">Please rate us on these factors</string>
+    <string name="contact_top">Contact Information</string>
+    <string name="cont_name">Name</string>
+    <string name="cont_email">Email</string>
+    <string name="cont_phone">Phone</string>
+    <string name="cont_btnsubmit">Submit</string>
+    <string name="last_page">Thank You</string>
+    <string name="last_page2">See you again</string>
+    <string name="login">Login</string>
+    <string name="forgot"><a href="#">Forgot username and password?</a></string>
+    <string name="invalid">Invalid username and password</string>
+    <string name="femail">Enter your email id to recover your username and password </string>
+    <string name="recover">Recover</string>
+    <string name="reset">Password Reset</string>
+    <string name="current_pass">Current Password</string>
+    <string name="New_pass">New Password</string>
+    <string name="Confirm_pass">Confirm Password</string>
+    <string name="Desc">Description: After entering the email address when you click on the recover button a mail will be sent to your registered email id with username and password.So please check your mail to get the login details.</string>
+
+</resources>

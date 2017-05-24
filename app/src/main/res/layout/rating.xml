@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="1500dp"
+        android:layout_height="100dp"
+        android:background="#610303">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt1"
+            android:text="MK"
+            android:textColor="#71ffffff"
+            android:textSize="80sp"
+            android:textStyle="bold"
+
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_below="@+id/rl1"
+        android:layout_width="1500dp"
+        android:layout_height="100dp"
+        >
+
+        <at.markushi.ui.CircleButton
+
+            android:id="@+id/lfarw"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/lftarw"
+            android:layout_marginTop="20dp"
+            app:cb_color="#d7b7b9"
+            app:cb_pressedRingWidth="15dip"
+
+            />
+
+        <com.example.raghulsn.feedback_new.model.CustomTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt2"
+            android:text="@string/rating_top"
+            android:layout_marginTop="40dp"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/activity_title_questions"
+
+            android:layout_centerHorizontal="true"
+            />
+
+        <at.markushi.ui.CircleButton
+            android:id="@+id/rgarw"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/rightarrow01"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            app:cb_color="#d7b7b9"
+            app:cb_pressedRingWidth="15dip"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_below="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="50dp"
+
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/lview"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

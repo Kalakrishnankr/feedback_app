@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff"
+
+        >
+
+        <EditText
+            android:id="@+id/edtText"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edttext"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="Enter pin number"
+            android:inputType="textPassword" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtText"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnok"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Ok" />
+
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@+id/btnok"
+                android:text="Cancel" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

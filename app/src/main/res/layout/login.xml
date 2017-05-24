@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlTop"
+            android:layout_centerHorizontal="true">
+
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="70dp"
+                android:id="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mk"/>
+
+
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rllogin"
+            android:layout_centerHorizontal="true">
+
+
+
+            <com.example.raghulsn.feedback_new.model.CustomTextview
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:textColor="#ffffff"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:text="@string/login"
+                android:gravity="center"/>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtfield"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="500dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="320dp"
+                android:hint="Username"
+                android:layout_marginLeft="90dp"
+                android:windowSoftInputMode="adjustResize"
+                android:background="@drawable/rounded"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="500dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/username"
+                android:hint="Password"
+                android:layout_marginLeft="90dp"
+                android:windowSoftInputMode="adjustResize"
+                android:background="@drawable/rounded"/>
+
+            <com.example.raghulsn.feedback_new.model.CustomTextview
+                android:id="@+id/forgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_marginTop="30dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_marginLeft="170dp"
+                android:text="@string/forgot"
+                android:gravity="center"
+                android:autoLink="web"
+                android:textColorLink="#ffffff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/invalid"
+                android:layout_below="@id/forgot"
+                android:textSize="20sp"
+                android:text="@string/invalid"
+                android:layout_marginLeft="170dp"
+                android:textColor="#000000"
+                android:visibility="gone"  />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="1500dp"
+        android:layout_height="100dp"
+        android:background="#610303">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt1"
+            android:text="MK"
+            android:textColor="#71ffffff"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_below="@+id/rl1"
+        android:layout_width="1500dp"
+        android:layout_height="100dp"
+        >
+
+        <at.markushi.ui.CircleButton
+
+            android:id="@+id/lfarw"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/lftarw"
+            android:layout_marginTop="20dp"
+            app:cb_color="#d7b7b9"
+            app:cb_pressedRingWidth="15dip"
+
+            />
+
+        <com.example.raghulsn.feedback_new.model.CustomTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt2"
+            android:text="@string/reset"
+            android:layout_marginTop="40dp"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+
+                android:layout_width="1500dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:background="#3aac0202"
+                >
+                <com.example.raghulsn.feedback_new.model.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="@string/current_pass"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/activity_contact_details"/>
+
+                <EditText
+                    android:id="@+id/edit_Txt1"
+                    android:layout_width="700dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="20dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="440dp"
+                    android:windowSoftInputMode="adjustResize"
+                    android:background="@drawable/rounded"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:layout_below="@+id/rl3"
+                android:layout_width="1500dp"
+                android:layout_height="1dp"
+                android:background="#5dffffff"
+                >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl5"
+                android:layout_below="@+id/rl4"
+                android:layout_width="1500dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="1dp"
+                android:background="#3aac0202"
+                >
+                <com.example.raghulsn.feedback_new.model.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="@string/New_pass"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/activity_contact_details"/>
+
+                <EditText
+                    android:id="@+id/edit_Txt2"
+                    android:layout_width="700dp"
+                    android:layout_height="50dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="440dp"
+                    android:background="@drawable/rounded"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl6"
+                android:layout_below="@+id/rl5"
+                android:layout_width="1500dp"
+                android:layout_height="1dp"
+                android:background="#5dffffff"
+                >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl7"
+                android:layout_below="@+id/rl6"
+                android:layout_width="1500dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="1dp"
+                android:background="#3aac0202"
+                >
+                <com.example.raghulsn.feedback_new.model.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="@string/Confirm_pass"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/activity_contact_details"/>
+
+                <EditText
+                    android:id="@+id/edit_Txt3"
+                    android:layout_width="700dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:layout_marginLeft="440dp"
+
+                    android:background="@drawable/rounded"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl8"
+                android:layout_below="@+id/rl7"
+                android:layout_width="1500dp"
+                android:layout_height="100dp"
+
+                >
+                <com.example.raghulsn.feedback_new.model.CustomButtonView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnSubmit"
+                    android:background="@drawable/buttons01"
+                    android:text="@string/cont_btnsubmit"
+                    android:textSize="@dimen/activity_btn"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

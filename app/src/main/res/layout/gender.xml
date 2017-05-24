@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="1500dp"
+        android:layout_height="100dp"
+        android:background="#610303">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt1"
+            android:text="MK"
+            android:textColor="#6effffff"
+            android:textSize="80sp"
+            android:textStyle="bold"
+
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_below="@+id/rl1"
+        android:layout_width="1500dp"
+        android:layout_height="100dp"
+        >
+
+        <com.example.raghulsn.feedback_new.model.CustomTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt2"
+            android:text="@string/gender_top"
+            android:layout_marginTop="40dp"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="1500dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!--<RelativeLayout
+            android:id="@+id/lfArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"
+            >
+  -->
+        <at.markushi.ui.CircleButton
+
+            android:id="@+id/larw"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/lftarw"
+            android:layout_marginTop="70dp"
+            app:cb_color="#d7b7b9"
+            app:cb_pressedRingWidth="15dip"
+
+            />
+
+
+        <!-- </RelativeLayout>-->
+
+        <!--<RelativeLayout
+            android:id="@+id/rlMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lfArrow"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            >-->
+
+        <ImageView
+            android:id="@+id/imgMan"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/male"
+            android:layout_marginLeft="350dp"
+            />
+
+        <!-- </RelativeLayout>
+         <RelativeLayout
+             android:id="@+id/rlGrl"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@+id/rlMan"
+             android:layout_marginLeft="70dp"
+             >-->
+
+        <!-- </RelativeLayout>
+
+
+
+
+     <RelativeLayout
+         android:id="@+id/rlArrowLeft"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="20dp"
+         android:layout_marginTop="25dp"
+
+         >-->
+
+
+
+        <ImageView
+            android:id="@+id/imgGrl"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/female"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/imgMan"
+
+
+            />
+
+        <!--</RelativeLayout>-->
+        <at.markushi.ui.CircleButton
+
+            android:id="@+id/rgarw"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/rightarrow01"
+            android:layout_marginTop="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            app:cb_color="#d7b7b9"
+            app:cb_pressedRingWidth="15dip"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl4"
+        android:layout_width="1500dp"
+        android:layout_height="200dp"
+        android:background="#3cac0202"
+        android:layout_below="@+id/rl3"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.example.raghulsn.feedback_new.model.CustomTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt3"
+            android:text="@string/age"
+            android:layout_marginLeft="40dp"
+
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+
+
+            />
+        <RelativeLayout
+            android:id="@+id/rl5"
+            android:layout_width="1500dp"
+            android:layout_height="150dp"
+
+            android:layout_below="@+id/txt3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <com.example.raghulsn.feedback_new.model.CustomButtonView
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="@dimen/activity_btn"
+                android:background="@drawable/btnbackgrnd"
+                android:text="@string/age_btn1"/>
+
+            <com.example.raghulsn.feedback_new.model.CustomButtonView
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="390dp"
+                android:textSize="@dimen/activity_btn"
+                android:background="@drawable/btnbackgrnd"
+                android:text="@string/age_btn2"/>
+
+            <com.example.raghulsn.feedback_new.model.CustomButtonView
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="710dp"
+                android:textSize="@dimen/activity_btn"
+                android:background="@drawable/btnbackgrnd"
+                android:text="@string/age_btn3"/>
+
+            <com.example.raghulsn.feedback_new.model.CustomButtonView
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="1030dp"
+                android:textSize="@dimen/activity_btn"
+                android:background="@drawable/btnbackgrnd"
+                android:text="@string/age_btn4"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

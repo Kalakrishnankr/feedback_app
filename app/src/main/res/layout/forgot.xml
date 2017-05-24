@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <at.markushi.ui.CircleButton
+
+            android:id="@+id/larw"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/lftarw"
+            android:layout_marginTop="90dp"
+            app:cb_color="#d7b7b9"
+            app:cb_pressedRingWidth="15dip"
+
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlTop"
+            android:layout_centerHorizontal="true">
+
+
+
+
+
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="90dp"
+                android:id="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mk"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rllogin"
+            android:layout_centerHorizontal="true">
+
+
+
+            <com.example.raghulsn.feedback_new.model.CustomTextview
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/femail"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="350dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="320dp"
+                android:hint="email address"
+
+                android:windowSoftInputMode="adjustResize"
+                android:background="@drawable/rounded"/>
+
+            <com.example.raghulsn.feedback_new.model.CustomButtonView
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="320dp"
+                android:id="@+id/recover"
+                android:background="@drawable/buttons01"
+                android:text="@string/recover"
+                android:textSize="@dimen/activity_btn"
+                android:layout_marginLeft="390dp" />
+
+            <com.example.raghulsn.feedback_new.model.CustomTextview
+                android:id="@+id/desc"
+                android:layout_width="550dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/Desc"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

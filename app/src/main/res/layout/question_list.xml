@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl4"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#3aac0202"
+        >
+        <com.example.raghulsn.feedback_new.model.CustomTextview
+            android:id="@+id/qs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="120dp"
+
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+
+
+        <com.example.raghulsn.feedback_new.AnimatedRatingBar
+            android:id="@+id/rb1"
+            android:layout_width="700dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="440dp"
+            app:layoutToUse="@layout/animated_ratinglayout_medium"
+            android:numStars="5"
+            android:stepSize="1"/>
+
+        <!-- <EditText
+             android:layout_width="700dp"
+             android:layout_height="50dp"
+             android:layout_marginTop="30dp"
+             android:layout_marginLeft="440dp"
+             android:background="#ffffff"/>-->
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl5"
+        android:layout_below="@+id/rl4"
+        android:layout_width="1500dp"
+        android:layout_height="1dp"
+        android:background="#5dffffff"
+        >
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
